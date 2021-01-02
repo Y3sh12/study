@@ -1,0 +1,323 @@
+.content {
+    margin-top: 25px;
+    font-size: 12px;
+}
+
+.crumb-nav a {
+    margin-right: 10px;
+}
+
+.preview {
+    width: 400px;
+    height: 560px;
+    padding-top: 10px;
+}
+
+.item-info {
+    width: 718px;
+}
+
+.preview-img {
+    padding: 5px;
+    border: 1px solid #ededed;
+}
+
+.preview-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.preview-list {
+    position: relative;
+    height: 58px;
+    margin-top: 64px;
+}
+
+.arrow-prev,
+.arrow-next {
+    position: absolute;
+    top: 12px;
+    width: 22px;
+    height: 32px;
+    background: url(../images/icons.png) no-repeat;
+}
+
+.preview-list .arrow-prev {
+    left: 0;
+    background-position: 0 -307px;
+}
+
+.preview-list .arrow-next {
+    right: 0;
+    background-position: 0 -270px;
+}
+
+.list-item {
+    margin: 0 auto;
+    width: 320px;
+    height: 58px;
+}
+
+.preview-list li {
+    float: left;
+    width: 56px;
+    height: 56px;
+    margin: 0 3px;
+    border: 1px solid transparent;
+}
+
+.preview-list li img {
+    width: 100%;
+    height: 100%;
+}
+
+.preview li.current {
+    border: 1px solid #74b9ff;
+}
+
+.product-name {
+    height: 34px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.product-news {
+    height: 34px;
+    color: #e12228;
+}
+
+.summary dl {
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.summary dt,
+.summary dd {
+    float: left;
+}
+
+.summary dt {
+    width: 62px;
+    height: 32px;
+    padding-left: 10px;
+    color: #666;
+    line-height: 32px;
+}
+
+.summary dd {
+    color: #999;
+}
+
+.summary-price,
+.summary-promotion {
+    position: relative;
+    background-color: #fee9eb;
+}
+
+.summary-price {
+    padding-top: 10px;
+}
+
+.summary-price i {
+    font-size: 24px;
+    color: #e12228;
+}
+
+.summary-price a {
+    color: #e12228;
+}
+
+.summary-price .remark {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+}
+
+.summary-promotion dd {
+    width: 550px;
+    line-height: 32px;
+}
+
+.summary-promotion em {
+    padding: 2px 4px;
+    background-color: #e12228;
+    color: #fff;
+}
+
+.summary-support dd,
+.summary-security dd {
+    line-height: 32px;
+}
+
+.summary-color dt {
+    height: 40px;
+    line-height: 40px;
+}
+
+.summary-color a {
+    display: inline-block;
+    height: 40px;
+    padding: 0 25px;
+    border: 1px solid #ededed;
+    background-color: #f7f7f7;
+    line-height: 40px;
+}
+
+.summary-color a.current {
+    border: 1px solid #74b9ff;
+}
+
+.choose-count {
+    position: relative;
+    width: 51px;
+    height: 47px;
+}
+
+.choose-count input {
+    width: 33px;
+    height: 45px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.add,
+.reduce {
+    position: absolute;
+    right: 0;
+    width: 15px;
+    height: 22px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-left: 0;
+    text-align: center;
+    line-height: 22px;
+}
+
+.add {
+    top: 0;
+}
+
+.reduce {
+    bottom: 0;
+    border-top: 0;
+    cursor: not-allowed;
+}
+
+.add-cart {
+    width: 162px;
+    height: 47px;
+    margin-left: 20px;
+    background-color: #0984e3;
+    color: #fff;
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.product-detail {
+    margin: 21px 0 25px;
+}
+
+.aside {
+    width: 206px;
+    border: 1px solid #ddd;
+}
+
+.aside-tab {
+    height: 33px;
+    line-height: 33px;
+}
+
+.aside-tab li {
+    float: left;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.aside-tab .classify {
+    width: 102px;
+    border-right: 1px solid #ddd;
+}
+
+.aside-tab .guess {
+    width: 103px;
+}
+
+.aside-tab .current {
+    background: none;
+    border-bottom: 1px solid transparent;
+    color: #0984e3;
+}
+
+.tab-con li {
+    padding: 15px 8px 0;
+}
+
+.tab-con li h5 {
+    margin: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 400;
+}
+
+.tab-con li p {
+    font-weight: 700;
+}
+
+.tab-con li .aside-add-cart {
+    display: block;
+    width: 88px;
+    height: 26px;
+    margin: 15px auto;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    text-align: center;
+    line-height: 26px;
+}
+
+.detail {
+    width: 978px;
+}
+
+.detail-tab {
+    height: 39px;
+    border: 1px solid #ddd;
+}
+
+.detail-tab li {
+    float: left;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 39px;
+}
+
+.detail-tab .current {
+    color: #fff;
+    background-color: #0984e3;
+}
+
+.detail-tab-con .item {
+    padding: 25px 0 0 20px;
+}
+
+.item li {
+    height: 25px;
+}
+
+.item p {
+    position: relative;
+}
+
+.item a.more {
+    position: absolute;
+    right: 10px;
+}
+
+.detail-img {
+    width: 790px;
+    margin: 10px auto;
+}

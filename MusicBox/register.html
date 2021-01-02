@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div class="w">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="register-area">
+            <h3>注册新用户
+                <em>我有账号，去<a href="#">登录</a></em>
+            </h3>
+            <div class="reg-from">
+                <form action="#">
+                    <ul>
+                        <li>
+                            <label for="tel">手机号：</label>
+                            <input type="text" class="input-text" id="tel" />
+                            <span class="msg error">
+                                <i class="msg-icon error-icon"></i>
+                                手机号码格式不正确，请重新输入</span>
+                        </li>
+                        <li>
+                            <label for="num">短信验证码：</label>
+                            <input type="text" class="input-text" id="num" />
+                        </li>
+                        <li>
+                            <label for="password">登录密码：</label>
+                            <input type="password" class="input-text" id="password" />
+                            <span class="msg error">
+                                <i class="msg-icon error-icon"></i>
+                                 密码长度不小于6位</span>
+                        </li>
+                        <li class="pwd-safe">
+                            安全程度
+                            <em class="ruo">弱</em>
+                            <em class="zhong">中</em>
+                            <em class="qiang">强</em>
+                        </li>
+                        <li>
+                            <label for="confirm">确认密码：</label>
+                            <input type="password" class="input-text" id="confirm" />
+                            <span class="msg success">
+                                <i class="msg-icon success-icon"></i>
+                                密码输入一致</span>
+                        </li>
+                        <li class="agree">
+                            <input type="checkbox" /> 同意协议并注册
+                            <a href="#">《用户协议》</a>
+                        </li>
+                        <li>
+                            <input type="submit" value="完成注册" class="over">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="mod-copyright">
+                <p>
+                    <a href="#">关于我们</a><b>|</b>
+                    <a href="#">联系我们</a><b>|</b>
+                    <a href="#">营销中心</a><b>|</b>
+                    <a href="#">网站地图</a><b>|</b>
+                    <a href="#">联系客服</a><b>|</b>
+                    <a href="#">隐私权政策</a><b>|</b>
+                    <a href="#">法律声明</a><b>|</b>
+                    <a href="#">知识产权</a><b>|</b>
+                    <a href="#">廉政举报</a>
+                </p>
+                <p>
+                    网站投诉电话：0000-5431231<b>|</b> 消费者投诉举报专线电话：12315<b>|</b> 违法和不良信息举报电话：12377<b>|</b> 违法和不良信息举报邮箱：jubao@12377.cn<br/> Copyright © 2020 八音盒musicbox.com 版权所有
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

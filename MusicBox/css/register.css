@@ -1,0 +1,146 @@
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+.header {
+    height: 82px;
+    margin-top: 20px;
+    border-bottom: 2px solid #0984e3;
+}
+
+.register-area {
+    height: 520px;
+    margin-top: 15px;
+    border: 1px solid #dfdfdf;
+}
+
+.register-area h3 {
+    height: 40px;
+    padding: 0 10px;
+    background-color: #ececec;
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.register-area h3 em {
+    float: right;
+    font-size: 14px;
+}
+
+.register-area a {
+    color: #0984e3;
+}
+
+.reg-from {
+    width: 600px;
+    height: 400px;
+    margin: 40px auto 0;
+}
+
+.reg-from li {
+    margin-bottom: 15px;
+}
+
+.reg-from label {
+    display: inline-block;
+    width: 100px;
+    height: 36px;
+    text-align: right;
+    line-height: 36px;
+}
+
+.input-text {
+    width: 238px;
+    height: 34px;
+    padding: 0 5px;
+    border: 1px solid #999;
+}
+
+.msg {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.msg-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: -2px;
+    background: url(../images/icons.png) no-repeat;
+    vertical-align: middle;
+}
+
+.error {
+    color: #df3033;
+}
+
+.error-icon {
+    background-position: 0 -245px;
+}
+
+.success {
+    color: #39ba36;
+}
+
+.success-icon {
+    background-position: 0 -220px;
+}
+
+.pwd-safe {
+    padding-left: 188px;
+    color: #bebebe;
+    font-size: 12px;
+}
+
+.pwd-safe em {
+    padding: 0 12px;
+    color: #fff;
+}
+
+.ruo {
+    background-color: #de1111;
+}
+
+.zhong {
+    background-color: #40b83f;
+}
+
+.qiang {
+    background-color: #f79100;
+}
+
+.agree {
+    padding: 20px 0 0 108px;
+}
+
+.agree input {
+    margin: -2px 5px 0 0;
+    vertical-align: middle;
+}
+
+.over {
+    width: 200px;
+    height: 34px;
+    margin: 30px 126px;
+    background-color: #0984e3;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+}
+
+.mod-copyright {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.mod-copyright p {
+    margin-bottom: 17px;
+}
+
+.mod-copyright b {
+    padding: 0 5px;
+}

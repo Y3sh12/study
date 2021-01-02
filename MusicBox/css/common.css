@@ -1,0 +1,295 @@
+/* 快捷导航栏 */
+
+.shortcut {
+    height: 31px;
+    background-color: #eaeff1;
+    font-size: 12px;
+    line-height: 31px;
+}
+
+.shortcut li {
+    float: left;
+}
+
+
+/* 竖线使用li设置样式即可，无需用到字体图标 */
+
+.vertical-line {
+    width: 1px;
+    height: 12px;
+    margin: 10px 13px 0;
+    background-color: #636e72;
+}
+
+
+/* header区域 */
+
+.header {
+    position: relative;
+    height: 105px;
+}
+
+.logo {
+    position: absolute;
+    top: 19px;
+    left: 0;
+    width: 175px;
+    height: 70px;
+}
+
+.logo a {
+    display: block;
+    width: 175px;
+    height: 70px;
+    background: url(../images/logo.png) no-repeat;
+    font-size: 0;
+}
+
+.search {
+    position: absolute;
+    top: 30px;
+    left: 348px;
+    width: 540px;
+    height: 30px;
+}
+
+.search input {
+    float: left;
+    width: 445px;
+    height: 32px;
+    padding-left: 11px;
+    border: 2px solid #74b9ff;
+    border-right: 0;
+    color: #b2bec3;
+    line-height: 32px;
+}
+
+.search button {
+    float: left;
+    width: 82px;
+    height: 36px;
+    background-color: #74b9ff;
+    color: #fff;
+    font-size: 16px;
+}
+
+.search-item {
+    position: absolute;
+    top: 73px;
+    left: 348px;
+    font-size: 12px;
+}
+
+.search-item a {
+    margin: 0 12px;
+}
+
+.shop-cart {
+    position: absolute;
+    top: 30px;
+    right: 65px;
+    width: 140px;
+    height: 34px;
+    border: 1px solid #dfe6e9;
+    background-color: #f7f7f7;
+    line-height: 34px;
+    text-align: center;
+    color: #0984e3;
+}
+
+.shop-cart:hover {
+    border-color: #0984e3;
+}
+
+.shop-cart a {
+    font-size: 13px;
+    color: #0984e3;
+}
+
+.shop-cart .count {
+    position: absolute;
+    top: -8px;
+    right: 20px;
+    /* 为了能左右伸缩，不要加宽度 */
+    height: 14px;
+    padding: 2px 6px;
+    background-color: #74b9ff;
+    line-height: 14px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 9px 9px 9px 0;
+}
+
+
+/* nav区域 */
+
+.nav {
+    height: 45px;
+    border-bottom: 2px solid #0984e3;
+}
+
+.dropdown .dt {
+    width: 209px;
+    height: 45px;
+    background-color: #0984e3;
+    color: #fff;
+    line-height: 45px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.dropdown .dd {
+    width: 209px;
+}
+
+.dd li {
+    height: 31px;
+    padding: 0 12px;
+    background-color: #74b9ff;
+    color: #fff;
+    line-height: 31px;
+    transition: all .2s;
+}
+
+.dd li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.dd li:hover {
+    background-color: #fff;
+    padding-left: 17px;
+}
+
+.dd li:hover a {
+    color: #74b9ff;
+}
+
+.dd li svg {
+    float: right;
+    margin-top: 8px;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+.nav-item li {
+    float: left;
+}
+
+.nav-item li a {
+    display: block;
+    height: 45px;
+    padding: 0 23px;
+    line-height: 45px;
+}
+
+
+/* footer */
+
+.footer {
+    height: 417px;
+    background-color: #eaeff1;
+}
+
+.mod-service {
+    height: 78px;
+    padding-top: 30px;
+    border-bottom: 1px solid #dbe0e2;
+}
+
+.mod-service li {
+    float: left;
+    width: 300px;
+    height: 78px;
+}
+
+.mod-service li i {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-left: 38px;
+    background: url(../images/icons.png) no-repeat;
+}
+
+.mod-service .icon-zheng {
+    background-position: 0 -165px;
+}
+
+.mod-service .icon-song {
+    background-position: 0 -110px;
+}
+
+.mod-service .icon-shou {
+    background-position: 0 -55px;
+}
+
+.mod-service .icon-help {
+    background-position: 0 0;
+}
+
+.mod-service div {
+    float: left;
+    padding: 5px 0 0 9px;
+}
+
+.mod-service h5 {
+    height: 25px;
+    font-size: 14px;
+}
+
+.mod-service p {
+    font-size: 12px;
+}
+
+.mod-help {
+    height: 188px;
+    border-bottom: 1px solid #dbe0e2;
+}
+
+.mod-help dl {
+    float: left;
+    width: 150px;
+    padding: 22px 0 0 50px;
+}
+
+.mod-help dt {
+    height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.mod-help dd {
+    height: 20px;
+    font-size: 12px;
+}
+
+.mod-help img {
+    width: 90px;
+    margin-bottom: 3px;
+    vertical-align: middle;
+}
+
+.mod-app {
+    padding-left: 20px;
+}
+
+p.mod-app {
+    padding-left: 9px;
+}
+
+.mod-copyright {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.mod-copyright p {
+    margin-bottom: 17px;
+}
+
+.mod-copyright b {
+    padding: 0 5px;
+}

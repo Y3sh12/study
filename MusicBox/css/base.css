@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+b {
+    font-weight: 400;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+a {
+    color: #636e72;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #74b9ff;
+}
+
+button,
+input {
+    font-family: 'Microsoft YaHei', 'Heiti SC', tahoma, arial, 'Hiragino Sans GB', \\5B8B\4F53, sans-serif;
+    outline: none;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Microsoft YaHei', 'Heiti SC', tahoma, arial, 'Hiragino Sans GB', \\5B8B\4F53, sans-serif;
+    color: #636e72;
+}
+
+.hide,
+.none {
+    display: none;
+}
+
+
+/* 清除浮动 */
+
+.clearfix:after {
+    content: "";
+    visibility: hidden;
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* 引入字体图标 */
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+
+/* 版心 */
+
+.text-area {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 左浮动 */
+
+.fl {
+    float: left;
+}
+
+
+/* 右浮动 */
+
+.fr {
+    float: right;
+}
+
+
+/* 凸显文字 */
+
+.style-blue {
+    color: #0984e3;
+}

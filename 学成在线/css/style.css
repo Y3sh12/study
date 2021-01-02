@@ -1,0 +1,493 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+input,
+button {
+    outline: none;
+}
+
+
+/*
+	 在布局编程入门模块时，发现了个问题：
+	 因为精品推荐模块的商品展示.goods没有设置高度，
+	 导致布局乱了，因此在商品展示.goods时需要清除浮动。
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+body {
+    background: #f3f5f7;
+}
+
+
+/*固定的侧边栏*/
+
+.fixedbar {
+    position: fixed;
+    z-index: 2;
+    top: 200px;
+    left: 50%;
+    /*贴着网页中线*/
+    /*往左：版心的一半 600px + 自己的宽度 186px +距离版心 w:25px*/
+    margin-left: -811px;
+    /*行距 22px*/
+    width: 186px;
+    padding-bottom: 22px;
+    background-color: #FFFFFF;
+}
+
+.fixedbar ul li {
+    padding: 22px 26px 0;
+    font-size: 14px;
+}
+
+.fixedbar li a {
+    color: #454545;
+}
+
+
+/*版心 w:1200px*/
+
+.area {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+
+/*header START*/
+
+.header {
+    margin: 30px auto;
+    height: 42px;
+    /*background: #DCDCDC;*/
+}
+
+.logo {
+    float: left;
+    margin-right: 69px;
+}
+
+.nav {
+    float: left;
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    padding: 0 10px;
+    margin-right: 25px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #424243;
+}
+
+.nav li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+.search {
+    float: left;
+    margin-left: 85px;
+}
+
+.search input {
+    float: left;
+    width: 360px;
+    height: 40px;
+    padding-left: 20px;
+    border: 1px solid #00a4ff;
+    border-right: 0;
+    font-size: 14px;
+}
+
+.search button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    background: url(../images/search_03.jpg);
+}
+
+.user {
+    float: left;
+    position: relative;
+    margin-left: 30px;
+    height: 42px;
+}
+
+.user img {
+    position: absolute;
+    top: 50%;
+    margin-top: -16.5px;
+}
+
+.user span {
+    margin-left: 40px;
+    line-height: 42px;
+    font-size: 14px;
+}
+
+
+/*header END*/
+
+
+/*banner START*/
+
+.banner {
+    width: 100%;
+    height: 420px;
+    background: #1c036c url(../images/banner.jpg) no-repeat center;
+}
+
+.subnav {
+    float: left;
+    width: 190px;
+    height: 396px;
+    padding: 12px 20px;
+    background: rgba(0, 0, 0, .3);
+    /*背景半透明*/
+}
+
+.subnav li {
+    height: 44px;
+    line-height: 44px;
+}
+
+.subnav li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.subnav li a:hover {
+    color: #0393d9;
+}
+
+.subnav span {
+    float: right;
+}
+
+.course {
+    float: right;
+    width: 228px;
+    height: 300px;
+    margin-top: 50px;
+    background: #fff;
+}
+
+.course-hd {
+    height: 48px;
+    background: #9bceea;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    /*文字加粗*/
+    text-align: center;
+    line-height: 48px;
+}
+
+.course-bd {
+    padding: 0 18px;
+}
+
+.course-bd ul {
+    margin-top: 5px;
+    /*不会出现外边距塌陷问题，因为父盒子course浮动了*/
+}
+
+.course-bd ul li {
+    height: 47px;
+    padding-top: 15px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.course-bd li h4 {
+    font-size: 14px;
+    color: #4e4e4e;
+}
+
+.course-bd li p {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.all {
+    display: block;
+    height: 38px;
+    margin-top: 6px;
+    border: 1px solid #22b0ff;
+    line-height: 38px;
+    text-align: center;
+    font-size: 16px;
+    color: #00a4ff;
+    font-weight: 700;
+}
+
+.all:hover {
+    background: #00A4FF;
+    color: #FFFFFF;
+}
+
+
+/*banner END*/
+
+
+/*goods-nav START*/
+
+.goods-nav {
+    height: 64px;
+    margin-top: 7px;
+    line-height: 64px;
+    background: #fff;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .2);
+    /*盒子阴影*/
+}
+
+.goods-nav h3 {
+    float: left;
+    margin: 0 33px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+.goods-item {
+    float: left;
+    color: #bfbfbf;
+}
+
+.goods-item a {
+    padding: 33px;
+    font-size: 16px;
+    color: #050505;
+}
+
+.goods-nav .mod {
+    float: right;
+    margin-right: 25px;
+    color: #00A4FF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+/*goods-nav END*/
+
+
+/*goods-show START*/
+
+.goods-show {
+    margin-top: 36px;
+}
+
+.title {
+    position: relative;
+    margin-bottom: 20px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.title h3 {
+    float: left;
+    font-size: 20px;
+    color: #686969;
+    font-weight: 400;
+}
+
+.title a {
+    float: right;
+    margin-right: 30px;
+    color: #a5a5a5;
+    font-size: 12px;
+}
+
+.goods {
+    /*
+		不确定有几行，因此不能设置高度。
+	 	宽度超过了版心的宽度，这是可以的。是为了解决最后一个盒子的右边距超出。
+	 */
+    width: 1300px;
+}
+
+
+/*.goods img {
+	position: absolute;
+	left: 300px;
+}*/
+
+.goods li {
+    position: relative;
+    float: left;
+    width: 228px;
+    height: 270px;
+    margin: 0 15px 15px 0;
+    background: #fff;
+}
+
+.goods li:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.goods li img {
+    width: 100%;
+    height: 155px;
+}
+
+
+/*小图标*/
+
+.goods .tip {
+    position: absolute;
+    right: -4px;
+    width: 40px;
+    height: 24px;
+}
+
+.goods li h4 {
+    margin: 24px 24px 16px;
+    height: 38.4px;
+    color: #454545;
+    font-size: 14px;
+}
+
+.goods li p {
+    margin: 0 24px;
+    color: #999999;
+    font-size: 12px;
+}
+
+.goods p span {
+    color: #ff7c2d;
+}
+
+
+/*goods-show END*/
+
+
+/*level-item START*/
+
+.title .level-item {
+    float: left;
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    width: 500px;
+    text-align: center;
+}
+
+.level-item span {
+    display: inline-block;
+    padding: 0 35px;
+    color: #868686;
+    font-size: 16px;
+}
+
+.level-item span:hover {
+    color: #00A4FF;
+    cursor: pointer;
+}
+
+
+/*level-item END*/
+
+
+/*content START*/
+
+.left {
+    float: left;
+    width: 228px;
+    height: 100%;
+    margin-right: 15px;
+}
+
+.ad-banner {
+    height: 100px;
+    margin-bottom: 17px;
+}
+
+
+/*content END*/
+
+
+/*footer START*/
+
+.footer {
+    height: 318px;
+    width: 100%;
+    margin-top: 35px;
+    background: #fff;
+}
+
+.copyright {
+    float: left;
+    margin: 34px 0 0 12px;
+}
+
+.copyright p {
+    margin: 26px 0 17px;
+    color: #666666;
+    font-size: 12px;
+}
+
+.copyright a {
+    display: inline-block;
+    width: 120px;
+    height: 35px;
+    border: 1px solid #00a4ff;
+    color: #00A4FF;
+    font-size: 16px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.about {
+    float: right;
+    margin: 34px 30px 0 0;
+}
+
+.about dl {
+    float: left;
+    margin-left: 145px;
+    color: #333333;
+}
+
+.about dl dt {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.about dl dd {
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.about a {
+    color: #797777;
+}
+
+
+/*footer END*/

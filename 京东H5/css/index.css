@@ -1,0 +1,328 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    /* 之后会删掉的 */
+    height: 1000px;
+    margin: 0 auto;
+    background: #f6f6f6;
+    color: #666;
+    font-size: 14px;
+    font-family: -apple-system, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+
+/* header START */
+
+
+/* 顶部区 */
+
+.top-wrap {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    height: 44px;
+}
+
+.top-bar,
+.top-login {
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 44px;
+}
+
+.top-bar {
+    left: 0;
+}
+
+.top-bar::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 18px;
+    margin: 14px 0 0 15px;
+    background: url(../images/bar.png) no-repeat;
+    background-size: 20px 18px;
+}
+
+.top-login {
+    right: 0;
+    color: #fff;
+    line-height: 44px;
+}
+
+.top-search {
+    position: relative;
+    overflow: hidden;
+    height: 30px;
+    margin: 7px 50px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.icon-jd {
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    width: 20px;
+    height: 15px;
+    background: url(../images/jd.png) no-repeat;
+    background-size: 20px 15px;
+}
+
+.icon-jd::after {
+    position: absolute;
+    top: 0;
+    left: 26px;
+    content: "";
+    display: block;
+    height: 16px;
+    border-right: 1px solid #ddd;
+}
+
+.icon-search {
+    position: absolute;
+    top: 8px;
+    left: 48px;
+    width: 18px;
+    height: 15px;
+    background: url(../images/icons.png) no-repeat -82px 0;
+    background-size: 200px 200px;
+}
+
+.top-search-input {
+    height: 30px;
+    padding-left: 72px;
+}
+
+.top-search-input input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 12px;
+}
+
+
+/* 轮播图区 */
+
+.carousel-wrap {
+    width: 100%;
+    height: 217px;
+    background: url(../upload/carousel-bg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 190px;
+}
+
+.carousel-img li {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-img a {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    top: 52px;
+    /* 一定注意减号（-）左右两边要加上空格，任意一边少了空格都不行 */
+    width: -webkit-calc(100% - 1.25rem);
+    width: calc(100% - 1.25rem);
+    height: 158px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.carousel-img a>img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-dotted {
+    position: relative;
+}
+
+.carousel-dotted>div {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    line-height: ;
+}
+
+.carousel-dotted span {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 2px;
+    background-color: hsla(0, 0%, 100%, .6);
+    border-radius: 50%;
+}
+
+
+/* 活动主题区 */
+
+.theme-wrap img {
+    float: left;
+    width: 33.33%;
+}
+
+
+/* header END */
+
+
+/* nav START */
+
+.icons-nav {
+    overflow: hidden;
+    width: 100%;
+}
+
+.nav-ul li {
+    float: left;
+    width: 20%;
+    height: 68px;
+    margin-top: 12px;
+}
+
+.nav-ul li>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #666;
+}
+
+.nav-ul .icon {
+    display: block;
+    width: 44px;
+    height: 44px;
+    margin: 0 auto 5px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon-market {
+    background-image: url(../images/icon-market.png);
+}
+
+.icon-elec {
+    background-image: url(../images/icon-elec.png);
+}
+
+.icon-costume {
+    background-image: url(../images/icon-costume.png);
+}
+
+.icon-flesh {
+    background-image: url(../images/icon-fresh.png);
+}
+
+.icon-express {
+    background-image: url(../images/icon-express.png);
+}
+
+.icon-recharge {
+    background-image: url(../images/icon-recharge.png);
+}
+
+.icon-group {
+    background-image: url(../images/icon-group.png);
+}
+
+.icon-ticket {
+    background-image: url(../images/icon-ticket.png);
+}
+
+.icon-lend {
+    background-image: url(../images/icon-lend.png);
+}
+
+.icon-vip {
+    background-image: url(../images/icon-vip.png);
+}
+
+.icons-nav p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.nav-dotted {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.nav-dotted div {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.carousel-dotted .current,
+.nav-dotted .current {
+    background-color: #fa2c19;
+}
+
+
+/* nav END */
+
+
+/* container START */
+
+.floor-graphic-item {
+    margin: 0 .5rem;
+    background-color: #fff;
+}
+
+.floor-graphic-item>div {
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    padding: 7px 0 5px 11px;
+}
+
+.graphic-text strong {
+    color: #242430;
+    font-size: 18px;
+}
+
+.graphic-text .display {
+    color: transparent;
+}
+
+.graphic-text .text-right {
+    text-align: right;
+}
+
+.graphic-text p {
+    font-size: 12px;
+}
+
+.graphic-img {
+    width: 66px;
+    height: 66px;
+}
+
+.graphic-img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* container END */

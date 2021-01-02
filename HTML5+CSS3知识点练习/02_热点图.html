@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>热点图</title>
+    <style>
+        body {
+            background-color: #333;
+        }
+        
+        .map {
+            position: relative;
+            margin: 0 auto;
+            width: 747px;
+            height: 616px;
+            background: url(images/map.png) center center no-repeat;
+        }
+        
+        .city {
+            position: absolute;
+        }
+        
+        .beijing {
+            top: 226px;
+            right: 193px;
+        }
+        
+        .taibei {
+            top: 496px;
+            right: 82px;
+        }
+        
+        .guangzhou {
+            top: 541px;
+            right: 194px;
+        }
+        
+        .dotted {
+            width: 8px;
+            height: 8px;
+            background-color: #087edd;
+            border-radius: 50%;
+        }
+        
+        .city div[class^="pulse"] {
+            /* 保证小波纹在父盒子里水平垂直居中，放大后由中心向四周扩散 */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            box-shadow: 0 0 12px #087edd;
+            border-radius: 50%;
+            /* 调用动画 */
+            animation: pulse 1.2s linear infinite;
+        }
+        /* 定义水波纹动画 */
+        
+        .city div.pulse2 {
+            animation-delay: .4s;
+        }
+        
+        .city div.pulse3 {
+            animation-delay: .8s;
+        }
+        
+        @keyframes pulse {
+            0% {}
+            70% {
+                /* transform: scale(5); */
+                /* 不使用scale,会让阴影变大 */
+                width: 40px;
+                height: 40px;
+                opacity: 1;
+            }
+            100% {
+                width: 70px;
+                height: 70px;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="map">
+        <div class="city beijing">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <div class="city taibei">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <div class="city guangzhou">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

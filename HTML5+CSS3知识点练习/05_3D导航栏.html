@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D导航栏</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            float: left;
+            width: 200px;
+            height: 40px;
+            margin: 0 10px;
+            list-style-type: none;
+            text-align: center;
+            line-height: 40px;
+            /* box旋转也需要透视 */
+            /* perspective: 500px; */
+        }
+        
+        a,
+        .bottom {
+            color: #333;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        
+        .box {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all .4s;
+        }
+        
+        .box:hover {
+            transform: rotateX(90deg);
+        }
+        
+        .front,
+        .bottom {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .front {
+            z-index: 1;
+            background-color: #33cc5c;
+            transform: translateZ(50%);
+        }
+        
+        .bottom {
+            background-color: rgb(116, 240, 133);
+            transform: translateY(50%) rotateX(-90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="01_2D旋转之文字闪现.html">
+                    <div class="box">
+                        <div class="front">01</div>
+                        <div class="bottom">2D旋转之文字闪现</div>
+                    </div>
+                </a>
+
+
+            </li>
+            <li>
+                <a href="02_热点图.html">
+                    <div class="box">
+                        <div class="front">02</div>
+                        <div class="bottom">动画之热点图</div>
+                    </div>
+                </a>
+
+
+            </li>
+            <li>
+                <a href="03_奔跑的北极熊.html">
+                    <div class="box">
+                        <div class="front">03</div>
+                        <div class="bottom">动画之奔跑的北极熊</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="04_硬币翻转效果.html">
+                    <div class="box">
+                        <div class="front">04</div>
+                        <div class="bottom">3D硬币翻转</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="box">
+                        <div class="front">05</div>
+                        <div class="bottom">3D导航栏</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
