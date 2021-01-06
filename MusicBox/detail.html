@@ -379,24 +379,26 @@
                                 </svg>
                             </a>
                         </p>
+                        <div class="detail-img">
+                            <img src="upload/detail_img_1.jpg" alt />
+                            <img src="upload/detail_img_2.jpg" alt />
+                            <img src="upload/detail_img_3.jpg" alt />
+                            <img src="upload/detail_img_4.jpg" alt />
+                            <img src="upload/detail_img_5.jpg" alt />
+                            <img src="upload/detail_img_6.jpg" alt />
+                            <img src="upload/detail_img_7.jpg" alt />
+                            <img src="upload/detail_img_8.jpg" alt />
+                            <img src="upload/detail_img_9.jpg" alt />
+                            <img src="upload/detail_img_10.jpg" alt />
+                            <img src="upload/detail_img_11.jpg" alt />
+                            <img src="upload/detail_img_12.jpg" alt />
+                            <img src="upload/detail_img_13.jpg" alt />
+                            <img src="upload/detail_img_14.jpg" alt />
+                            <img src="upload/detail_img_15.jpg" alt />
+                        </div>
                     </div>
-                    <div class="detail-img">
-                        <img src="upload/detail_img_1.jpg" alt />
-                        <img src="upload/detail_img_2.jpg" alt />
-                        <img src="upload/detail_img_3.jpg" alt />
-                        <img src="upload/detail_img_4.jpg" alt />
-                        <img src="upload/detail_img_5.jpg" alt />
-                        <img src="upload/detail_img_6.jpg" alt />
-                        <img src="upload/detail_img_7.jpg" alt />
-                        <img src="upload/detail_img_8.jpg" alt />
-                        <img src="upload/detail_img_9.jpg" alt />
-                        <img src="upload/detail_img_10.jpg" alt />
-                        <img src="upload/detail_img_11.jpg" alt />
-                        <img src="upload/detail_img_12.jpg" alt />
-                        <img src="upload/detail_img_13.jpg" alt />
-                        <img src="upload/detail_img_14.jpg" alt />
-                        <img src="upload/detail_img_15.jpg" alt />
-                    </div>
+                    <div class="item" style="display: none;">推！推！推！</div>
+                    <div class="item" style="display: none;">正品保障</div>
                 </div>
             </div>
         </div>
@@ -511,6 +513,46 @@
         </div>
     </div>
     <!-- footer END -->
+
+    <script>
+        toggleTab();
+        // tab栏切换
+        // 两步走：
+        // 1.设置单击时，tab栏的li样式
+        // 2.单击li时，显示对应的item
+        function toggleTab() {
+            // 获取tab栏的li
+            var tab = document.querySelector(".detail-tab");
+            var lis = tab.querySelectorAll("li");
+            var items = document.querySelectorAll(".item");
+            // 给li绑定单击事件，单击li改变样式，显示对应item
+            for (var i = 0; i < lis.length; i++) {
+                // 给li设置data-index属性， 根据该属性值选择显示的item
+                lis[i].setAttribute("data-index", i);
+                // console.log(lis[i].dataset.index);
+                lis[i].onclick = function() {
+                    // 1.改变样式
+                    // 1)排他：清除所有li的样式
+                    for (var j = 0; j < lis.length; j++) {
+                        lis[j].className = "";
+                    }
+                    // 2)设置当前li的样式
+                    this.className = "current";
+
+                    // 2.显示对应item
+                    // 1)排他：不显示所有的item
+                    for (var j = 0; j < items.length; j++) {
+                        items[j].style.display = "none";
+                    }
+                    // 2)获取当前li的data-index属性值
+                    var index = this.dataset.index;
+                    // console.log(index);
+                    // 3)显示当前li对应的item
+                    items[index].style.display = "block";
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>

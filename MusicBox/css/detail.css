@@ -293,6 +293,7 @@
     padding: 0 20px;
     text-align: center;
     line-height: 39px;
+    cursor: pointer;
 }
 
 .detail-tab .current {
